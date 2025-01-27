@@ -57,15 +57,20 @@ Automate building and testing of code changes. Example:
 
 ```yaml
 on: [push, pull_request]
+
 jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Build
-      run: npm ci
-    - name: Test
-      run: npm test
+      - uses: actions/checkout@v3
+      - name: Set up Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: '1.x'  # Specify your Go version here, like '1.17' or '1.x' for latest in 1.x series
+      - name: Build
+        run: go build -v ./...
+      - name: Test
+        run: go test -v ./...
 ```
 
 #### Continuous Deployment (CD)
