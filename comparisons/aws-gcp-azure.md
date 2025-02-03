@@ -1,4 +1,4 @@
-# Comparing AWS, GKE, and Azure
+# Comparing AWS, GCP, and Azure
 
 Welcome to our comprehensive comparison of three major cloud platforms: Amazon Web Services ([AWS](https://aws.amazon.com)), Google Cloud Platform ([GCP](https://cloud.google.com/?hl=en)), and Microsoft [Azure](https://azure.microsoft.com/en-ca). In this blog post, we'll break down the most commonly used services focusing on compute, storage, networking, and machine learning/artificial intelligence capabilities.
 
